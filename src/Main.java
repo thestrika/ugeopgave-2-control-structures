@@ -390,8 +390,125 @@ public class Main {
 
 
 
+        /*
         //Opgave 14: Bestillingssytem
 
+        String item = "coffee";
+        double price = 0.0;
+        String size = "large";
+        boolean isADrink = false;
+
+        switch(item){
+
+            case "coffee":
+                isADrink = true;
+                price = 25;
+                switch(size){
+                    case "small":
+                        price *= 1.0;
+                        break;
+                    case "medium":
+                        price *= 1.2;
+                        break;
+                    case "large":
+                        price *= 1.5;
+                        break;
+                    default:
+                        System.out.println("Size unknown...");
+                }
+                break;
+            case "tea":
+                isADrink = true;
+                price = 20;
+                switch (size){
+                    case "small":
+                        price *= 1.0;
+                        break;
+                    case "medium":
+                        price *= 1.2;
+                        break;
+                    case "large":
+                        price *= 1.5;
+                        break;
+                }
+                break;
+            case "sandwich":
+                price = 45;
+                break;
+            case "cake":
+                price = 35;
+                break;
+            default:
+                System.out.println("Item not found...");
+                break;
+                
+
+        }
+
+
+        if(isADrink){
+            System.out.println("Drink chosen: " + item);
+            System.out.println("Size chosen: " + size);
+        }
+        else{
+            System.out.println("Item chosen: " + item);
+        }
+        System.out.println("Price: " + price);
+
+         */
+
+        /*
+        //Opgave 15: Savings goal
+        int i = 0;
+        int counter = 0;
+
+        while(i < 10000){
+            i += 500;
+            counter++;
+        }
+
+        System.out.println("Months before 10k: " + counter);
+
+         */
+
+
+        /*
+        //Opgave 16: Loan repayment
+
+        int i = 0;
+        int months = 0;
+        int debt = 5000;
+
+        while(i < debt){
+            months++;
+            i += 200;
+        }
+        System.out.println("Months to repay loan: " + months);
+
+         */
+
+
+
+        /*
+        //Opgave 17: Temperaturomregningstabel
+        
+        int celcius = 0;
+        int f = 0;
+
+        System.out.println("===CELSIUS TO FAHRENHEIT CONVERTER===");
+        while(celcius <= 100){
+            System.out.println("Celcius: " + celcius);
+            System.out.println("Fahrenheit: " + (celcius * (9.0 / 5.0) + 32));
+            System.out.println(" ");
+            celcius += 10;
+
+            
+            
+        }
+
+         */
+
+        //Opgave 18: Renters rente
 
         
 
