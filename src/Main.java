@@ -40,6 +40,7 @@ public class Main {
 
 
 
+
         /*
         //Opgave 3: Time of day greeting
 
@@ -54,7 +55,7 @@ public class Main {
         else if(time >= 18 && time <= 21){
             System.out.println("Good evening!");
         }
-        else if(time >= 22 && time <= 4){
+        else if(time >= 22 && time <= 24 || (time >= 1 && time <=4)){
             System.out.println("Good night!");
         }
         else{
@@ -62,6 +63,8 @@ public class Main {
         }
 
          */
+
+
 
 
         /*
@@ -164,6 +167,7 @@ public class Main {
 
 
 
+
         /*
         //Opgave 8: Insurance premium calculator
         int age = 22;
@@ -174,15 +178,18 @@ public class Main {
         int prize = 5000;
 
 
-        if((age < 25 || age > 70) || (accidents > 2) || (riskZone)){
+        if((age < 25 || age > 70) || (hasAccidents && accidents > 2) || (riskZone)){
             prize += riskFee;
             System.out.println("High risk. Annual price: " + prize);
         }
         else{
             System.out.println("Annual price: " + prize);
         }
-
+        
          */
+
+         
+
 
 
 
@@ -197,7 +204,7 @@ public class Main {
         boolean hasLimitedAccess = false;
         String level;
 
-        if(isAdmin || isSuperUser){
+        if(isAdmin && accountActive|| isSuperUser && accountActive){
             level = "Full access";
         }
         else if(accountActive && !isSuspended || (isGuest && hasGuestTime)){
@@ -212,8 +219,10 @@ public class Main {
         System.out.println("Admin status: " + isAdmin);
         System.out.println("Limited access: " + hasLimitedAccess);
         System.out.println("Access level: " + level);
-
+        
          */
+
+         
 
 
         /*
@@ -391,6 +400,7 @@ public class Main {
 
 
 
+
         /*
         //Opgave 14: Bestillingssytem
 
@@ -398,6 +408,7 @@ public class Main {
         double price = 0.0;
         String size = "large";
         boolean isADrink = false;
+        int quantity = 2;
 
         switch(item){
 
@@ -454,9 +465,12 @@ public class Main {
         else{
             System.out.println("Item chosen: " + item);
         }
-        System.out.println("Price: " + price);
-
+        System.out.println("Quantity: " + quantity);
+        System.out.println("Price: " + (price * quantity));
+        
          */
+
+         
 
         /*
         //Opgave 15: Savings goal
@@ -743,6 +757,7 @@ public class Main {
 
          */
 
+
         /*
         //Opgave 28: Student names
         String[] roster = {"Emma", "Liam", "Olivia", "Noah", "Ava"};
@@ -752,7 +767,7 @@ public class Main {
         for(String name : roster){
             System.out.println("Welcome, " + name + "!");
 
-            if(name.length() >= 4){
+            if(name.length() == 4){
                 lettersCounter++;
             }
 
@@ -761,10 +776,12 @@ public class Main {
             }
         }
 
-        System.out.println("Student names with over 4 letters: " + lettersCounter);
+        System.out.println("Student names with 4 letters: " + lettersCounter);
         System.out.println("Student with longest name: " + max);
 
          */
+
+         
 
         /*
         //Opgave 29: Product Inventory
