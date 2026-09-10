@@ -248,6 +248,7 @@ public class Main {
          */
 
 
+
         /*
         //Opgave 11: Shipping cost calculator
         String zone = "National";
@@ -274,13 +275,17 @@ public class Main {
 
         }
 
-        weightFee = (weight - 5) * 20;
+        if(weight > 5){
+            weightFee = (weight - 5) * 20;
+        }
         System.out.println("Shipping zone: " + zone);
         System.out.println("Shipping cost before fees: " + shippingCost + "kr.");
         System.out.println("Added weight fee: " + weightFee + "kr.");
         System.out.println("Total shipping cost: " + (shippingCost + weightFee) + "kr.");
 
          */
+
+
 
 
         /*
@@ -320,8 +325,10 @@ public class Main {
                     System.out.println("Not enough funds available for transfer");
                     System.out.println("Available funds: " + balance + "kr");
                 }
+                break;
             default:
                 System.out.println("ERROR 404 CONTACT SUPPORT");
+                break;
 
         }
 
@@ -329,13 +336,71 @@ public class Main {
 
 
 
+        /*
+        //Opgave 13: Billetbestillings system
+
+        String eventType = "concert";
+        int price = 0;
+        int quantity = 2;
+        boolean isStudent = true;
+        double studentDiscount = 0.80;
+        boolean discountApplied = false;
+
+        switch(eventType){
+            case "movie":
+                price = 100;
+                break;
+            case "concert":
+                price = 250;
+                break;
+            case "sports":
+                price = 200;
+                break;
+            case "theater":
+                price = 150;
+                break;
+            default:
+                System.out.println("No event found for your query");
+                break;
+
+        }
+
+
+        System.out.println("========");
+        System.out.println("SUMMARY:");
+        System.out.println("Event type: " + eventType);
+        System.out.println("Base price per ticket: " + price + "kr");
+
+        if(isStudent && (eventType.equals("concert") || eventType.equals("theater"))){
+            price *= studentDiscount;
+            discountApplied = true;
+        }
+
+        if(discountApplied){
+            System.out.println("Elligible for student discount. Price with discount pr. ticket: " + price + "kr");
+        }
+        else{
+            System.out.println("Inelligible for student discount");
+        }
+
+        System.out.println("Ticket amount: " + quantity + " tickets");
+        System.out.println("Total price for " + quantity + " tickets: " + (price * quantity) + "kr");
+
+         */
+
+
+
+        //Opgave 14: Bestillingssytem
+
+
         
 
 
+        
 
+        
 
-
-
+        
 
 
 
