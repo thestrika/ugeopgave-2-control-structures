@@ -576,7 +576,103 @@ public class Main {
 
 
 
+        /*
         //Opgave 21: Multiplication tables 1-10
+        for(int i = 1; i <= 10; i++){
+            for(int y = 1; y <= 10; y++){
+                System.out.println(i + " * " + y + " = " + (i * y));
+            }
+            System.out.println();
+
+        }
+
+
+         */
+
+
+        /*
+        //Opgave 22: Fizz Buzz
+
+        for(int i = 1; i <= 30; i++){
+            if(i % 3 == 0 && i % 5 == 0){
+                System.out.println("FizzBuzz");}
+            else if(i % 3 == 0){
+                System.out.println("Fizz");
+            }
+            else if(i % 5 == 0){
+                System.out.println("Buzz");
+            }
+            else{
+                System.out.println(i);
+            }
+        }
+
+         */
+
+
+        /*
+        //Opgave 23: Primenumbers
+
+        int number = 29;
+        boolean primeNumber = true;
+
+        for(int i = 2; i < number; i++){
+            System.out.println("Checking number: " + i);
+            if(number % i == 0){
+                primeNumber = false;
+                break;
+
+            }
+        }
+
+        if(primeNumber == true){
+            System.out.println(number + " is a prime number");
+        }
+        else{
+            System.out.println(number + " is not a prime number");
+        }
+
+
+         */
+
+
+        /*
+        //Opgave 24: Grade statistics
+        int[] classScores = {85, 92, 78, 88, 95, 73, 90};
+        int sum = 0;
+        int average = 0;
+        int max = classScores[0];
+        int min = classScores[0];
+        int counter = 0;
+
+        for(int i = 0; i < classScores.length; i++){
+            sum += classScores[i];
+
+            if(classScores[i] < min){
+                min = classScores[i];
+            }
+            else if(classScores[i] > max){
+                max = classScores[i];
+            }
+
+            if(classScores[i] > 80){
+                counter++;
+            }
+
+        }
+        System.out.println("Min is: " + min);
+        System.out.println("Max is: " + max);
+        System.out.println("Sum is: " + sum);
+        System.out.println("Average is: " + ((double)sum / classScores.length));
+        System.out.println("Amount of scores over 80: " + counter);
+
+         */
+
+
+        //Opgave 25: Temp analysis
+        
+
+       
         
 
         
