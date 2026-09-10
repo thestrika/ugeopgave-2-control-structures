@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Main {
 
 
@@ -508,10 +509,75 @@ public class Main {
 
          */
 
+
+        /*
         //Opgave 18: Renters rente
 
-        
+        int balance = 10000;
+        int years = 0;
+        int target = 20000;
 
+
+        while(balance <= target){
+            balance *= 1.05;
+            years++;
+            System.out.println("År " + years + ": " + balance);
+
+        }
+
+         */
+
+
+        /*
+        //Opgave 19: Password forsøgg
+
+        Scanner myScanner = new Scanner(System.in);
+        String correctPassword = "secret123";
+        String password = " ";
+        int attempts = 3;
+        boolean isLocked = false;
+
+        while(! password.equals(correctPassword)){
+            System.out.println("Enter password");
+            password = myScanner.nextLine();
+            if(password.equals(correctPassword)){
+                System.out.println("Login successful");
+                break;
+            }
+            else{
+                attempts--;
+                System.out.println("Incorrect password. " + attempts + " remaining");
+            }
+            if(attempts == 0){
+                isLocked = true;
+                System.out.println("Account locked due to too many unsuccessful login attempts");
+                break;
+            }
+        }
+
+         */
+
+
+        /*
+        //Opgave 20: savings calc
+        int months = 0;
+        int savings = 0;
+        int monthlyAmount = 1000;
+
+        for(int i = 1; i <= 12; i++){
+            savings += monthlyAmount;
+            System.out.println("Month: " + i + " " + savings);
+            months++;
+
+        }
+        System.out.println("Savings after " + months + " months = " + savings);
+
+         */
+
+
+
+        //Opgave 21: Multiplication tables 1-10
+        
 
         
 
