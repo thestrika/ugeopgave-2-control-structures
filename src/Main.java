@@ -669,7 +669,119 @@ public class Main {
          */
 
 
+        /*
         //Opgave 25: Temp analysis
+        int[] temps = {18, 22, 20, 25, 19, 21, 23};
+        int sum = 0;
+        int average = 0;
+        int tempCounter = 0;
+        int min = temps[0];
+        int max = temps[0];
+
+        for(int i = 0; i < temps.length; i++){
+            sum += temps[i];
+            if(temps[i] < min){
+                min = temps[i];
+            }
+            else if(temps[i] > max){
+                max = temps[i];
+            }
+
+            if(temps[i] > 20){
+                tempCounter++;
+            }
+        }
+
+        System.out.println("Minimum: " + min);
+        System.out.println("Maximum: " + max);
+        System.out.println("Over 20 celcius: " + tempCounter);
+        System.out.println("Sum: " + sum);
+        System.out.println("Average: " + ((double)sum / temps.length));
+
+         */
+
+
+
+        /*
+        //Opgave 26: sale analysis
+        int[] salesData = {1200, 1500, 900, 2100, 1800, 1300, 2500};
+        int totalSales = 0;
+        int salesSum = 0;
+        double average = 0.0;
+        int topSale = salesData[0];
+        int counter = 0;
+
+        for(int i = 0; i < salesData.length; i++){
+            salesSum += salesData[i];
+            totalSales++;
+
+            if(topSale < salesData[i]){
+                topSale = salesData[i];
+            }
+
+            if(salesData[i] > 1500){
+                counter++;
+            }
+            
+        }
+
+        System.out.println("Sales sum: " + salesSum);
+        System.out.println("Average sale: " + ((double)salesSum / totalSales));
+        System.out.println("Best sales day: " + topSale);
+        System.out.println("Days over 1500kr: " + counter);
+
+         */
+
+        /*
+        //Opgave 27: shopping cart total
+        double[] prices = {299.0, 149.0, 899.0, 49.0};
+        double sum = 0;
+        for(double price : prices){
+            sum += price;
+        }
+        System.out.println("Sum: " + sum);
+
+         */
+
+        /*
+        //Opgave 28: Student names
+        String[] roster = {"Emma", "Liam", "Olivia", "Noah", "Ava"};
+        int lettersCounter = 0;
+        String max = roster[0];
+
+        for(String name : roster){
+            System.out.println("Welcome, " + name + "!");
+
+            if(name.length() >= 4){
+                lettersCounter++;
+            }
+
+            if(name.length() > max.length()){
+                max = name;
+            }
+        }
+
+        System.out.println("Student names with over 4 letters: " + lettersCounter);
+        System.out.println("Student with longest name: " + max);
+
+         */
+
+        /*
+        //Opgave 29: Product Inventory
+        int[] stockLevels = {45, 12, 67, 8, 34, 5, 89};
+        int reorderThreshold = 10;
+        int reorderCounter = 0;
+
+        for(int stock : stockLevels){
+            if(stock <= reorderThreshold){
+                reorderCounter++;
+            }
+            
+        }
+        System.out.println("Sizes needing reorder: " + reorderCounter);
+
+         */
+        
         
 
        
